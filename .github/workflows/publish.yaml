@@ -38,13 +38,13 @@ jobs:
       - name: Version
         run: pnpm version --new-version "${GITHUB_REF:11}" --allow-same-version --no-git-tag-version
       
-      - run: pnpm publish --tag next
+      - run: pnpm publish --no-git-checks --tag next
         # if github release tag contains - then its a prerelease
         if: ${{ contains(github.ref, '-') }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - run: pnpm publish
+      - run: pnpm publish --no-git-checks
         # if github release tag doesn't contains - then its a normal release
         if: ${{ !contains(github.ref, '-') }}
         env:
