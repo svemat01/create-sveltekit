@@ -1,10 +1,10 @@
 {
-    "name": "create-sveltekit",
-    "version": "1.0.0",
+    "name": "create-sveltekit-app",
+    "version": "0.0.1",
     "description": "",
     "main": "./lib/index.js",
     "bin": {
-        "create-sveltekit": "./index.js"
+        "create-sveltekit-app": "./index.js"
     },
     "files": [
         "index.js",

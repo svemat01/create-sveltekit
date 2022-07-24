@@ -1,4 +1,4 @@
-# create-sveltekit
+# create-sveltekit-app
 A simple package to help newcomers create Svelte apps by using the correct command.
 
 ## Plans
